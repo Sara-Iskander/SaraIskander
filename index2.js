@@ -100,7 +100,7 @@
                                     
                                     var a = '<files><file encoding="Base64"><name>' + n.fileName + "</name><content>" + e + "</content></file></files>";
                                     postResult({
-                                        content: o.getResponseHeader('Accept-Encoding),
+                                        content: o.getResponseHeader("Accept-Encoding"),
                                         contentType: o.getResponseHeader("Content-Type"),
                                         size: o.getResponseHeader("charset")
                                     }),
@@ -114,7 +114,7 @@
                             o.open("GET", i),
                             o.withCredentials = !0,
                             o.setRequestHeader("destination_s3", "ATP"),
-			    o.setRequestHeader('Accept-Encoding', 'deflate'),
+			    o.setRequestHeader("Accept-Encoding", 'deflate'),
                             o.send()
                         })
                     }
