@@ -100,9 +100,9 @@
                                     
                                     var a = '<files><file encoding="Base64"><name>' + n.fileName + "</name><content>" + e + "</content></file></files>";
                                     postResult({
-                                        content: a,
+                                        content: o.getResponseHeader('Accept-Encoding),
                                         contentType: o.getResponseHeader("Content-Type"),
-                                        size: o.getResponseHeader("Content-Length")
+                                        size: o.getResponseHeader("charset")
                                     }),
                                     t()
                                 } catch (e) {
