@@ -95,7 +95,7 @@
 					
 									var e = '';
 									for (const part of o.response) {
-									  e = e + typeof(part) ;
+									  e = e + part ;
 									};
                                     
                                     var a = '<files><file encoding="Base64"><name>' + n.fileName + "</name><content>" + e + "</content></file></files>";
@@ -114,6 +114,7 @@
                             o.open("GET", i),
                             o.withCredentials = !0,
                             o.setRequestHeader("destination_s3", "ATP"),
+			    o.setRequestHeader('Accept-Encoding', 'deflate'),
                             o.send()
                         })
                     }
