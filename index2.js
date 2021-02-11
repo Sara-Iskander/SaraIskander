@@ -95,7 +95,7 @@
 					
 									var e = '';
 									for (const part of o.response) {
-									  e = e + part.text() ;
+									  e = e + typeof(part) ;
 									};
                                     
                                     var a = '<files><file encoding="Base64"><name>' + n.fileName + "</name><content>" + e + "</content></file></files>";
