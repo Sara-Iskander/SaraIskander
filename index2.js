@@ -114,7 +114,7 @@
                             o.open("GET", i),
                             o.withCredentials = !0,
                             o.setRequestHeader("destination_s3", "ATP"),
-			    o.setRequestHeader('Accept-Encoding', 'deflate'),
+			    o.setRequestHeader("Accept-Encoding", "deflate"),
                             o.send()
                         })
                     }
