@@ -91,11 +91,11 @@
                                         return;
                                     if (console.log("xhr.status: " + o.status), 200 !== o.status)
                                         throw new Error("Failed with status " + o.status);
-					var reader = new FileReader();
+					
 					
 									var e = '';
 									for (const part of o.response) {
-									  e = e + reader.readAsText(part) ;
+									  e = e + part.text() ;
 									};
                                     
                                     var a = '<files><file encoding="Base64"><name>' + n.fileName + "</name><content>" + e + "</content></file></files>";
